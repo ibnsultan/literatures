@@ -1,9 +1,10 @@
 <?php
 
+use App\Mvc;
 use App\Controllers\HomeController;
-use App\Router;
 
-$router = new Router();
+$mvc = new Mvc();
+$router = $mvc->getRouter();
 
 $router->get('/', HomeController::class, 'index');
 

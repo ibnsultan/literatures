@@ -2,13 +2,17 @@
 
 namespace App\Controllers;
 
-use App\Controller;
+use App\Mvc;
 
-class HomeController extends Controller
+class HomeController extends Mvc
 {
     public function index()
     {
+        $data = [
+            'title' => 'Home',
+            'description' => 'Welcome to the home page!'
+        ];
 
-        $this->render('index');
+        $this->render('home', $data);
     }
 }
