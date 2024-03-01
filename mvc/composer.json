@@ -1,0 +1,12 @@
+{
+    "name": "ibnsultan/mvc",
+    "description": "a simple mvc framework",
+    "type": "project",
+    "license": "MIT",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        }
+    }
+}
